@@ -1,5 +1,10 @@
 # projeto-ifReads
 
+## Instruções de execução
+
+    Para executar e adquirir o output.css do Tailwind durante development:
+        npx tailwindcss -i ./src/resources/styles/style.css -o ./dist/output.css --watch
+
 ## Endereço de Deploy - GitHub Pages
 
 https://github.com/beatrizamante/projeto-ifReads
@@ -28,4 +33,3 @@ https://www.figma.com/file/lKYFpYYjg18cWJ7dSrJ62D/projeto_ifReads?type=design&no
 - [ ] Usar a diretiva ngIf
 - [ ] Formatar a apresentação de dados com Pipes.
 - [ ] Build e deploy da aplicação.
-
