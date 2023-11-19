@@ -7,7 +7,7 @@
   font-family: "Comfortaa", cursive;
 }
 
-.bg-icon {
-  background: url(./images/searchicon.svg) no-repeat scroll 7px 7px;
-  padding-left: 30px;
-}
+/* .searchicon {
+  background: url(/src/resources/images/searchicon.svg) no-repeat scroll 10px 10px;
+  padding-left: 40px;
+} */
