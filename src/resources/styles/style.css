@@ -11,3 +11,8 @@
   background: url(/src/resources/images/searchicon.svg) no-repeat scroll 10px 10px;
   padding-left: 40px;
 } */
+
+html {
+  background: url(/src/resources/images/bg-main-page.png) no-repeat center
+    center fixed;
+}
