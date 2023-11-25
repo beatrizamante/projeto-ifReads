@@ -9,6 +9,7 @@ module.exports = {
       DEFAULT: "4px",
       md: "1rem",
       lg: "1.5rem",
+      xlg: "4rem",
       full: "9999px",
       large: "12px",
     },

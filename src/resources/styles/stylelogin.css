@@ -13,9 +13,20 @@
 } */
 
 body {
-  background-blend-mode: screen;
-  background-image: linear-gradient(rgba(7, 167, 158), rgb(2, 28, 53)),
-    url(/src/resources/images/bg-main-page.png);
+  background-image: linear-gradient(to bottom, #02011c, #02011c),
+    url(/src/resources/images/f489b8e6aa51e9df1da0fb0b3676f00e.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-height: 740px) {
+  body {
+    background-size: cover;
+  }
 }
