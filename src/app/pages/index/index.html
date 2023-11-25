@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,37 +16,37 @@
     ></script>
     <title>if_Reads</title>
   </head>
-  <header>
-    <div class="navbar bg-gradient-to-t from-bluedark to-teal-dark shadow-md">
-      <div class="flex-1 pl-2 pt-2">
-        <img
-          class="w-24"
-          src="/src/resources/images/icon-small-text-cropped.svg"
-          alt="ifReads-icons"
-        />
-      </div>
-      <div class="flex-none">
-        <input
-          type="text"
-          class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
-          placeholder="Search"
-        />
-        <button class="btn btn-square btn-ghost">
+  <body id="home" class="flex flex-col min-h-screen">
+    <header>
+      <div class="navbar bg-gradient-to-t from-bluedark to-teal-dark shadow-md">
+        <div class="flex-1 pl-2 pt-2">
           <img
-            src="/src/resources/images/lni_lni-more-alt.svg"
-            alt="three dots"
+            class="w-24"
+            src="/src/resources/images/icon-small-text-cropped.svg"
+            alt="ifReads-icons"
           />
-        </button>
+        </div>
+        <div class="flex-none">
+          <input
+            type="text"
+            class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
+            placeholder="Search"
+          />
+          <button class="btn btn-square btn-ghost">
+            <img
+              src="/src/resources/images/lni_lni-more-alt.svg"
+              alt="three dots"
+            />
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <body id="home">
     <div
-      class="flex flex-wrap items-center justify-center flow-grow overflow-y-auto mx-3 space-y-4"
+      class="flex-grow flex flex-wrap items-center justify-center overflow-y-auto mx-3"
     >
       <div
-        class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto flex-1 p-4"
+        class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto flex-1"
       >
         <div class="card-body">
           <div class="card-actions justify-start">Author: Ana-e</div>
@@ -61,7 +60,7 @@
         </div>
       </div>
       <div
-        class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto h-32 flex-1"
+        class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto flex-1"
       >
         <div class="card-body">
           <p class="truncate">
@@ -87,13 +86,15 @@
         </div>
       </div>
     </div>
+
+    <footer
+      class="footer footer-center p-4 bg-gradient-to-t from-bluedark to-teal-dark text-teal"
+    >
+      <aside>
+        <p>Copyright © 2023</p>
+      </aside>
+    </footer>
+
+    <script></script>
   </body>
-  <footer
-    class="footer footer-center mt-auto absolute bottom-0 p-4 bg-gradient-to-t from-bluedark to-teal-dark text-teal"
-  >
-    <aside>
-      <p>Copyright © 2023</p>
-    </aside>
-  </footer>
-  <script></script>
 </html>
