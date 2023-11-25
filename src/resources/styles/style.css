@@ -12,7 +12,16 @@
   padding-left: 40px;
 } */
 
-html {
+/* html {
   background: url(/src/resources/images/bg-main-page.png) no-repeat center
     center fixed;
+    
+} */
+
+body {
+  background-blend-mode: screen;
+  background-image: linear-gradient(rgba(7, 167, 158), rgb(2, 28, 53)),
+    url(/src/resources/images/bg-main-page.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
