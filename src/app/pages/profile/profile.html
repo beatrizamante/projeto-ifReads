@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/15517dfa2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>if_Reads</title>
+  </head>
+  <body id="home" class="flex flex-col min-h-screen">
+    <header>
+      <div class="navbar bg-gradient-to-t from-bluedark to-teal-dark shadow-md">
+        <div class="flex-1 pl-2 pt-2">
+          <img
+            class="w-24"
+            src="/src/resources/images/icon-small-text-cropped.svg"
+            alt="ifReads-icons"
+          />
+        </div>
+        <div class="flex-none">
+          <input
+            type="text"
+            class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
+            placeholder="Search"
+          />
+          <button class="btn btn-square btn-ghost">
+            <img
+              src="/src/resources/images/lni_lni-more-alt.svg"
+              alt="three dots"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex-grow flex flex-wrap items-center justify-center mx-3">
+      <div class="card w-96">
+        <div
+          class="card-body bg-bluedark h-[80vh] bg-opacity-60 bg-blend-multiply rounded-lg flex flex-col justify-center items-center"
+        >
+          <form
+            action=""
+            method="post"
+            class="gap-4 mt-4 mb-4 my-10 flex flex-col justify-center items-center"
+          >
+            <label for="username">
+              <img src="/src/resources/images/username.png" alt=""
+            /></label>
+            <input
+              name="username"
+              id="username"
+              type="text"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              placeholder="username"
+            />
+            <label for="email">
+              <img src="/src/resources/images/email.png" alt="" />
+            </label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              placeholder="e-mail"
+            />
+            <label for="password">
+              <img src="/src/resources/images/passwordprofile.png" alt="" />
+            </label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              placeholder="password"
+            />
+            <label for="confirm-password">
+              <img src="/src/resources/images/confirmpass.png" alt="" />
+            </label>
+            <input
+              name="confirm-password"
+              id="confirm-password"
+              type="password"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              placeholder="confirm password"
+            />
+            <select
+              class="select select-bordered select-sm w-full max-w-xs mt-4"
+            >
+              <option disabled selected>Selecter your gender</option>
+              <option>She/Her</option>
+              <option>He/Him</option>
+              <option>They/Them</option>
+            </select>
+          </form>
+          <button class="mx-6 drop-shadow-xl shadow-none my-6" id="login">
+            <img src="/src/resources/images/save-button.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer footer-center p-4 bg-gradient-to-t from-bluedark to-teal-dark text-teal"
+    >
+      <aside>
+        <p>Copyright © 2023</p>
+      </aside>
+    </footer>
+
+    <script></script>
+  </body>
+</html>
