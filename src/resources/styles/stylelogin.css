@@ -14,9 +14,9 @@
 
 body {
   background-image: linear-gradient(to bottom, #02011c, #02011c),
-    url(/src/resources/images/f489b8e6aa51e9df1da0fb0b3676f00e.jpg);
+    url(/src/resources/images/login.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   min-height: 100vh;
   margin: 0;
