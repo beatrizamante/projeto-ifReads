@@ -71,6 +71,7 @@
               type="email"
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
               placeholder="e-mail"
+              pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
             <label for="password">
               <img src="/src/resources/images/passwordprofile.png" alt="" />
@@ -81,6 +82,7 @@
               type="password"
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
               placeholder="password"
+              pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
             />
             <label for="confirm-password">
               <img src="/src/resources/images/confirmpass.png" alt="" />
@@ -91,6 +93,7 @@
               type="password"
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
               placeholder="confirm password"
+              pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
             />
             <select
               class="select select-bordered select-sm w-full max-w-xs mt-4"

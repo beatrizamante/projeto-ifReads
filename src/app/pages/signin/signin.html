@@ -32,6 +32,7 @@
             method="post"
             id="login-form"
             class="flex flex-col justify-center items-center"
+            required
           >
             <label for="username" class="">
               <img src="/src/resources/images/username.png" alt="" />
@@ -40,6 +41,7 @@
               type="text"
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
               placeholder="username"
+              id="username-signin"
             />
             <label for="password" class="">
               <img src="/src/resources/images/password.png" alt="" />
@@ -48,14 +50,15 @@
               type="text"
               class="rounded-tl-xlg rounded-br-xlg placeholder:text-center w-64 h-8 mr-2"
               placeholder="password"
+              required
+              pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
+              id="password-signin"
             />
-            <!-- <input type="checkbox" checked="checked" class="checkbox"">
-            <span>Remember me</span> -->
           </form>
         </div>
         <button
           class="btn btn-md lg:btn-lg bg-gradient-to-r from-bluedark from-10% to-teal rounded-tl-xlg rounded-br-xlg mx-6 drop-shadow-xl shadow-none"
-          id="login"
+          id="login-from-signin"
         >
           <img src="/src/resources/images/button-login2.0.png" alt="" />
         </button>
