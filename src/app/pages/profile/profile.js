@@ -1,8 +1,12 @@
 let isValid = true;
 window.onload = loadData();
 
+$(document).ready(function () {
+  $("birthday").mask("00/00/0000");
+});
+
 function validateEmail(email) {
-  const emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
 
@@ -60,12 +64,10 @@ document
     const gender = document.getElementById("gender").value;
 
     if (!validateEmail(email)) {
-      document.getElementById("email-error").style.display = "block";
       isValid = false;
     }
 
     if (!validateDate(birthday)) {
-      document.getElementById("birthday-error").style.display = "block";
       isValid = false;
     }
 
@@ -75,7 +77,3 @@ document
       $(".showData").fadeIn(2000);
     }
   });
-
-$(document).ready(function () {
-  $("birthday").mask("00/00/0000");
-});

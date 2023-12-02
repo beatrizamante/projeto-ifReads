@@ -1,7 +1,7 @@
 let isValid = false;
 
 function validateEmail(email) {
-  const emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
 
@@ -21,11 +21,11 @@ document
     if (validateEmail(email) == true && validatePassword(password) == true) {
       isValid = true;
     }
-  });
 
-if (isValid) {
-  console.log("Encaminhando");
-  // document.getElementById("button-signin").onclick = function () {
-  //   location.href = "/src/app/pages/signin/signin.html";
-  // };
-}
+    if (isValid) {
+      console.log("Encaminhando");
+      document.getElementById("button-signin").onclick = function () {
+        location.href = "/src/app/pages/signin/signin.html";
+      };
+    }
+  });

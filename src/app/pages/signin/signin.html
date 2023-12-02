@@ -46,7 +46,7 @@
               placeholder="email"
               id="email-signin"
               required
-              pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
             />
             <label for="password-signin" class="">
               <img src="/src/assets/resources/images/password.png" alt="" />
@@ -54,7 +54,7 @@
             <input
               type="password"
               class="rounded-tl-xlg rounded-br-xlg placeholder:text-center w-64 h-8 mr-2 text-center"
-              placeholder="password-signin"
+              placeholder="password"
               required
               pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
               id="password-signin"
@@ -62,7 +62,7 @@
             <button
               class="btn btn-md lg:btn-lg bg-gradient-to-r from-bluedark from-10% to-teal rounded-tl-xlg rounded-br-xlg mx-6 drop-shadow-xl shadow-none mt-4"
               id="button-signin"
-              type="submit"
+              type="button"
             >
               <img
                 src="/src/assets/resources/images/button-login2.0.png"
