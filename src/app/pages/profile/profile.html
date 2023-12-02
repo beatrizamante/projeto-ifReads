@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/assets/resources/styles/style.css" />
     <script
       src="https://kit.fontawesome.com/15517dfa2f.js"
       crossorigin="anonymous"
@@ -22,7 +23,7 @@
         <div class="flex-1 pl-2 pt-2">
           <img
             class="w-24"
-            src="/src/resources/images/icon-small-text-cropped.svg"
+            src="/src/assets/resources/images/icon-small-text-cropped.svg"
             alt="ifReads-icons"
           />
         </div>
@@ -32,9 +33,9 @@
             class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
             placeholder="Search"
           />
-          <button class="btn btn-square btn-ghost">
+          <button class="btn btn-square btn-ghost" onclick="goToMenu()">
             <img
-              src="/src/resources/images/lni_lni-more-alt.svg"
+              src="/src/assets/resources/images/lni_lni-more-alt.svg"
               alt="three dots"
             />
           </button>
@@ -45,68 +46,86 @@
     <div class="flex-grow flex flex-wrap items-center justify-center mx-3">
       <div class="card w-96">
         <div
-          class="card-body bg-bluedark h-[80vh] bg-opacity-60 bg-blend-multiply rounded-lg flex flex-col justify-center items-center"
+          class="card-body bg-bluedark h-[80vh] bg-opacity-60 bg-blend-multiply rounded-lg flex flex-col justify-center items-center mx-4"
         >
           <form
             action=""
             method="post"
-            class="gap-4 mt-4 mb-4 my-10 flex flex-col justify-center items-center"
+            class="gap-4 mt-4 mb-4 h-auto flex flex-col justify-center items-center shrink-0 shadow-xl"
+            id="profile-form"
           >
-            <label for="username">
-              <img src="/src/resources/images/username.png" alt=""
+            <label for="nickname">
+              <img
+                src="/src/assets/resources/images/username.png"
+                alt=""
+                class="h-auto mr-2"
             /></label>
             <input
-              name="username"
-              id="username"
+              name="nickname"
+              id="nickname"
               type="text"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
-              placeholder="username"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
+              placeholder="nickname"
             />
             <label for="email">
-              <img src="/src/resources/images/email.png" alt="" />
+              <img
+                src="/src/assets/resources/images/email.png"
+                alt=""
+                class="h-auto mr-2"
+              />
             </label>
             <input
               name="email"
               id="email"
               type="email"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
               placeholder="e-mail"
               pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
             <label for="password">
-              <img src="/src/resources/images/passwordprofile.png" alt="" />
+              <img
+                src="/src/assets/resources/images/passwordprofile.png"
+                alt=""
+                class="h-auto mr-2"
+              />
             </label>
             <input
               name="password"
               id="password"
               type="password"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
               placeholder="password"
               pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
             />
-            <label for="confirm-password">
-              <img src="/src/resources/images/confirmpass.png" alt="" />
+            <label for="birthday">
+              <img
+                src="/src/assets/resources/images/birthday.png"
+                alt=""
+                class="h-auto mr-2"
+              />
             </label>
             <input
-              name="confirm-password"
-              id="confirm-password"
-              type="password"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2"
-              placeholder="confirm password"
-              pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
+              name="birthday"
+              id="birthday"
+              type="text"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
+              placeholder="birthday"
+              min="01-01-1900"
+              max="31-12-2023"
             />
             <select
               class="select select-bordered select-sm w-full max-w-xs mt-4"
+              id="gender-query"
             >
               <option disabled selected>Selecter your gender</option>
               <option>She/Her</option>
               <option>He/Him</option>
               <option>They/Them</option>
             </select>
+            <button class="mx-6 drop-shadow-xl shadow-none my-6" id="login">
+              <img src="/src/assets/resources/images/save-button.svg" alt="" />
+            </button>
           </form>
-          <button class="mx-6 drop-shadow-xl shadow-none my-6" id="login">
-            <img src="/src/resources/images/save-button.svg" alt="" />
-          </button>
         </div>
       </div>
     </div>
@@ -119,6 +138,8 @@
       </aside>
     </footer>
 
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/src/assets/libraries/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="/src/app/pages/profile/profile.js"></script>
   </body>
 </html>

@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/assets/resources/styles/style.css" />
     <script
       src="https://kit.fontawesome.com/15517dfa2f.js"
       crossorigin="anonymous"
@@ -22,7 +23,7 @@
         <div class="flex-1 pl-2 pt-2">
           <img
             class="w-24"
-            src="/src/resources/images/icon-small-text-cropped.svg"
+            src="/src/assets/resources/images/icon-small-text-cropped.svg"
             alt="ifReads-icons"
           />
         </div>
@@ -32,9 +33,13 @@
             class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
             placeholder="Search"
           />
-          <button class="btn btn-square btn-ghost">
+          <button
+            class="btn btn-square btn-ghost"
+            onclick="goToMenu()"
+            id="menu-button"
+          >
             <img
-              src="/src/resources/images/lni_lni-more-alt.svg"
+              src="/src/assets/resources/images/lni_lni-more-alt.svg"
               alt="three dots"
             />
           </button>
@@ -47,27 +52,31 @@
         <div
           class="card-body bg-bluedark h-fit bg-opacity-60 bg-blend-multiply rounded-lg gap-24 mt-4 mb-4"
         >
-          <button>
-            <img src="/src/resources/images/my-profile.png" alt="" />
+          <button id="my-profile">
+            <img
+              src="/src/assets/resources/images/my-profile.png"
+              alt=""
+              onclick="goToProfile()"
+            />
           </button>
           <button>
-            <img src="/src/resources/images/link-to-if.png" alt="" />
+            <img src="/src/assets/resources/images/link-to-if.png" alt="" />
           </button>
           <button>
-            <img src="/src/resources/images/write-review.png" alt="" />
+            <img src="/src/assets/resources/images/write-review.png" alt="" />
           </button>
           <button>
-            <img src="/src/resources/images/review-library.png" alt="" />
+            <img src="/src/assets/resources/images/review-library.png" alt="" />
           </button>
           <button>
-            <img src="/src/resources/images/liked-reviews.png" alt="" />
+            <img src="/src/assets/resources/images/liked-reviews.png" alt="" />
           </button>
 
           <div class="flex space-x-4 justify-between">
-            <img src="/src/resources/images/discord.svg" alt="" />
-            <img src="/src/resources/images/steam 1.svg" alt="" />
-            <img src="/src/resources/images/tumblr.svg" alt="" />
-            <img src="/src/resources/images/patreon 1.svg" alt="" />
+            <img src="/src/assets/resources/images/discord.svg" alt="" />
+            <img src="/src/assets/resources/images/steam 1.svg" alt="" />
+            <img src="/src/assets/resources/images/tumblr.svg" alt="" />
+            <img src="/src/assets/resources/images/patreon 1.svg" alt="" />
           </div>
         </div>
       </div>
@@ -81,6 +90,6 @@
       </aside>
     </footer>
 
-    <script></script>
+    <script src="/src/app/pages/menu/menu.js"></script>
   </body>
 </html>

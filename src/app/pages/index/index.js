@@ -1,8 +1,3 @@
-// Initialization for ES Users
-import {
-    Collapse,
-    Ripple,
-    initTE,
-  } from "tw-elements";
-  
-  initTE({ Collapse, Ripple });
+document.getElementById("menu-button").onclick = function () {
+  location.href = "/src/app/pages/menu/menu.html";
+};

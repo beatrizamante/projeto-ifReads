@@ -14,7 +14,7 @@
 
 body {
   background-image: linear-gradient(to bottom, #02011c, #02011c),
-    url(/src/resources/images/login.png);
+    url(/src/assets/resources/images/login.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
