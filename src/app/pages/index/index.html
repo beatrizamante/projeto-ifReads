@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/assets/resources/styles/style.css"/>
+    <script
+      src="https://kit.fontawesome.com/15517dfa2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>if_Reads</title>
+  </head>
+  <body id="home" class="flex flex-col min-h-screen">
+    <header>
+      <div class="navbar bg-gradient-to-t from-bluedark to-teal-dark shadow-md">
+        <div class="flex-1 pl-2 pt-2">
+          <img
+            class="w-24"
+            src="/src/assets/resources/images/icon-small-text-cropped.svg"
+            alt="ifReads-icons"
+          />
+        </div>
+        <div class="flex-none">
+          <input
+            type="text"
+            class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
+            placeholder="Search"
+            id="Search"
+          />
+          <button class="btn btn-square btn-ghost" onclick="goToMenu()" id="menu-button">
+            <img
+              src="/src/assets/resources/images/lni_lni-more-alt.svg"
+              alt="three dots"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Parent div -->
+    <div
+      class="flex-grow flex flex-wrap items-center justify-center overflow-y-auto mx-3 lg:h-full lg:gap-4 lg:mt-4 lg:mb-4" id="authors-div"
+    >
+    </div>
+    </body>
+
+    <footer
+      class="footer footer-center p-4 bg-gradient-to-t from-bluedark to-teal-dark text-teal"
+    >
+      <aside>
+        <p>Copyright © 2023</p>
+      </aside>
+    </footer>
+
+    <script src="/src/app/pages/index/index.js"></script>
+  </body>
+</html>

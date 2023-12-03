@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-serif {
+  font-family: "Comfortaa", cursive;
+}
+
+/* .searchicon {
+  background: url(/src/resources/images/searchicon.svg) no-repeat scroll 10px 10px;
+  padding-left: 40px;
+} */
+
+body {
+  background-image: linear-gradient(to bottom, #02011c, #02011c),
+    url(/src/assets/resources/images/login.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-height: 740px) {
+  body {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/assets/resources/styles/stylelogin.css" />
+    <script
+      src="https://kit.fontawesome.com/15517dfa2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>if_Reads</title>
+  </head>
+  <body id="login-screen" class="flex flex-col">
+    <div id="main-login" class="flex flex-col items-center mx-6 mt-56 py-6">
+      <div
+        id="rectagle"
+        class="bg-gradient-to-t from-teal rounded-md h-[60vh] flex flex-col items-center justify-end py-10 gap-8 my-6 w-5/6 bg-opacity-20"
+      >
+        <div id="icon-title" class="w-52 self-center drop-shadow-xl">
+          <img
+            src="/src/assets/resources/images/icon-title-cropped.svg"
+            alt=""
+          />
+        </div>
+        <div id="form-div" class="flex flex-col items-center">
+          <form
+            action="."
+            method="post"
+            id="signin-form"
+            class="flex flex-col justify-center items-center"
+          >
+            <label for="email-signin" class="">
+              <img src="/src/assets/resources/images/emailsignin.png" alt="" />
+            </label>
+            <input
+              type="text"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2 text-center invalid:border-invalid invalid:text-invalid"
+              placeholder="email"
+              id="email-signin"
+              required
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              focus
+            />
+            <label for="password-signin" class="">
+              <img src="/src/assets/resources/images/password.png" alt="" />
+            </label>
+            <input
+              type="password"
+              class="rounded-tl-xlg rounded-br-xlg placeholder:text-center w-64 h-8 mr-2 text-center invalid:border-invalid invalid:text-invalid"
+              placeholder="password"
+              required
+              pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
+              id="password-signin"
+            />
+            <button
+              class="btn btn-md lg:btn-lg bg-gradient-to-r from-bluedark from-10% to-teal rounded-tl-xlg rounded-br-xlg mx-6 drop-shadow-xl shadow-none mt-4"
+              id="button-signin"
+              type="submit"
+            >
+              <img
+                src="/src/assets/resources/images/button-login2.0.png"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/src/app/pages/signin/signin.js"></script>
+  </body>
+</html>
