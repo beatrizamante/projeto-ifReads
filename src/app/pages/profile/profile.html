@@ -54,7 +54,7 @@
     <div class="flex-grow flex flex-wrap items-center justify-center mx-3">
       <div class="card w-96">
         <div
-          class="card-body bg-bluedark h-[80vh] bg-opacity-60 bg-blend-multiply rounded-lg flex flex-col justify-center items-center mx-4"
+          class="card-body bg-bluedark h-[80vh] bg-opacity-60 bg-blend-multiply rounded-lg flex flex-col justify-center items-center mx-4 lg:h-full"
         >
           <form
             action=""
@@ -75,7 +75,7 @@
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
               placeholder="nickname"
             />
-            <label for="email">
+            <!-- <label for="email">
               <img
                 src="/src/assets/resources/images/email.png"
                 alt=""
@@ -89,8 +89,8 @@
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="e-mail"
               pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
-            <label for="password">
+            /> -->
+            <!-- <label for="password">
               <img
                 src="/src/assets/resources/images/passwordprofile.png"
                 alt=""
@@ -104,7 +104,7 @@
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="password"
               pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
-            />
+            /> -->
             <label for="birthday">
               <img
                 src="/src/assets/resources/images/birthday.png"
@@ -118,11 +118,11 @@
               type="text"
               class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="birthday"
-              min="01-01-1900"
-              max="31-12-2023"
+              min="01/01/1900"
+              max="31/12/2023"
             />
             <select
-              class="select select-bordered select-sm w-full max-w-xs mt-4"
+              class="select select-bordered select-sm w-full max-w-xs mt-4 invalid:border-invalid invalid:text-invalid"
               id="gender-query"
             >
               <option disabled selected>Selecter your gender</option>

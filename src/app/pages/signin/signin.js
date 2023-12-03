@@ -24,8 +24,6 @@ document
 
     if (isValid) {
       console.log("Encaminhando");
-      document.getElementById("button-signin").onclick = function () {
-        location.href = "/src/app/pages/signin/signin.html";
-      };
+      location.href = "/src/app/pages/index/index.html";
     }
   });
