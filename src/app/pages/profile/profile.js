@@ -1,16 +1,17 @@
 let isValid = true;
-window.onload = loadData();
+// window.onload = loadData();
 
 $(document).ready(function () {
   $("#birthday").mask("00/00/0000");
 });
 
-function validateEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
+// function validateEmail(email) {
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   return emailRegex.test(email);
+// }
 
 function convertStringToDate(dateString) {
+  // console.log(birthday);
   const [day, month, year] = dateString.split("/");
 
   const formattedDate = new Date(year, month - 1, day);
@@ -20,16 +21,15 @@ function convertStringToDate(dateString) {
 
 function validateDate(birthday) {
   const minDate = new Date("01-01-1900");
-  const maxDate = new Date("05-11-2023");
+  const maxDate = new Date("07-12-2023");
   birthday = convertStringToDate(birthday);
 
   return birthday >= minDate && birthday <= maxDate;
 }
 
-function saveData(nickname, email, birthday, gender) {
+function saveData(nickname, birthday, gender) {
   const myData = {
     nickname: nickname,
-    email: email,
     birthday: birthday,
     gender: gender,
   };
@@ -38,37 +38,34 @@ function saveData(nickname, email, birthday, gender) {
   console.log("Data stored!");
 }
 
-function loadData() {
-  console.log("Loading data...");
-  const databank = JSON.parse(localStorage.getItem("stored-Data"));
-
-  if (databank) {
-    document.getElementById("my-nickname").innerHTML = `
-                <:>Nickname: ${databank.nickname}, ${databank.gender}.</p>
-                `;
-  }
-}
+// function loadData() {
+//   console.log("Loading data...");
+//   const databank = JSON.parse(localStorage.getItem("stored-Data"));
+// }
 
 document
   .getElementById("profile-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nickname = document.getElementById("#nickname").value;
-    const email = document.getElementById("#email").value;
-    const birthday = document.getElementById("#birthday").value;
-    const gender = document.getElementById("#gender").value;
+    const nickname = document.getElementById("nickname").value;
+    const birthday = document.getElementById("birthday").value;
+    const gender = document.getElementById("gender-query").value;
 
-    if (!validateEmail(email)) {
-      isValid = false;
-    }
+    // if (!validateEmail(email)) {
+    //   isValid = false;
+    // }
 
     if (!validateDate(birthday)) {
-      isValid = false;
+      alert("Invalid information, try again!");
+      console.log("Invalid");
+      return;
     }
 
     if (isValid) {
-      saveData(nickname, email, birthday, gender);
-      loadData();
+      console.log("Saving!");
+      saveData(nickname, birthday, gender);
+      alert("Data saved!");
+      // loadData();
     }
   });

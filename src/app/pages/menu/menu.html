@@ -34,11 +34,7 @@
             class="font-serif placeholder-teal-light rounded-tl-lg rounded-br-lg placeholder:text-center shadow-inner bg-teal w-40 lg:w-56"
             placeholder="Search"
           />
-          <button
-            class="btn btn-square btn-ghost"
-            onclick="goToMenu()"
-            id="menu-button"
-          >
+          <button class="btn btn-square btn-ghost" id="menu-button">
             <img
               src="/src/assets/resources/images/lni_lni-more-alt.svg"
               alt="three dots"
@@ -50,16 +46,13 @@
 
     <div class="flex-grow flex flex-wrap items-center justify-center mx-3">
       <div class="card w-96">
+        <span id="my-nickname" class="text-textColor align-middle"></span>
+
         <div
           class="card-body bg-bluedark h-fit bg-opacity-60 bg-blend-multiply rounded-lg gap-24 mt-4 mb-4"
         >
-          <p id="my-nickname" class="hidden"></p>
           <button id="my-profile">
-            <img
-              src="/src/assets/resources/images/my-profile.png"
-              alt=""
-              onclick="goToProfile()"
-            />
+            <img src="/src/assets/resources/images/my-profile.png" alt="" />
           </button>
           <button>
             <img src="/src/assets/resources/images/link-to-if.png" alt="" />
