@@ -27,6 +27,7 @@ module.exports = {
       },
       bluedark: "#021C35",
       textColor: "#442A35",
+      invalid: "#ff5580",
     },
   },
   plugins: [require("daisyui")],

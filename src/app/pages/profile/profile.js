@@ -2,7 +2,7 @@ let isValid = true;
 window.onload = loadData();
 
 $(document).ready(function () {
-  $("birthday").mask("00/00/0000");
+  $("#birthday").mask("00/00/0000");
 });
 
 function validateEmail(email) {
@@ -43,12 +43,8 @@ function loadData() {
   const databank = JSON.parse(localStorage.getItem("stored-Data"));
 
   if (databank) {
-    document.getElementById("showData").innerHTML = `
-                <h1><strong>Data Stored as follow: </strong></h1>
-                <p>Nickname: ${databank.nickname}</p>
-                <p>Email: ${databank.email}.</p>
-                <p>Birthday: ${databank.birthday}.</p>
-                <p>Gender: ${databank.gender}.</p>
+    document.getElementById("my-nickname").innerHTML = `
+                <:>Nickname: ${databank.nickname}, ${databank.gender}.</p>
                 `;
   }
 }
@@ -58,10 +54,10 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nickname = document.getElementById("nickname").value;
-    const email = document.getElementById("email").value;
-    const birthday = document.getElementById("birthday").value;
-    const gender = document.getElementById("gender").value;
+    const nickname = document.getElementById("#nickname").value;
+    const email = document.getElementById("#email").value;
+    const birthday = document.getElementById("#birthday").value;
+    const gender = document.getElementById("#gender").value;
 
     if (!validateEmail(email)) {
       isValid = false;
@@ -74,6 +70,5 @@ document
     if (isValid) {
       saveData(nickname, email, birthday, gender);
       loadData();
-      $(".showData").fadeIn(2000);
     }
   });

@@ -15,6 +15,7 @@
       src="https://kit.fontawesome.com/15517dfa2f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>if_Reads</title>
   </head>
   <body id="login-screen" class="flex flex-col">
@@ -35,25 +36,25 @@
             method="post"
             id="signin-form"
             class="flex flex-col justify-center items-center"
-            required
           >
             <label for="email-signin" class="">
               <img src="/src/assets/resources/images/emailsignin.png" alt="" />
             </label>
             <input
               type="text"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2 text-center"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-64 mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="email"
               id="email-signin"
               required
               pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              focus
             />
             <label for="password-signin" class="">
               <img src="/src/assets/resources/images/password.png" alt="" />
             </label>
             <input
               type="password"
-              class="rounded-tl-xlg rounded-br-xlg placeholder:text-center w-64 h-8 mr-2 text-center"
+              class="rounded-tl-xlg rounded-br-xlg placeholder:text-center w-64 h-8 mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="password"
               required
               pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
@@ -73,8 +74,6 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="/src/assets/libraries/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
     <script src="/src/app/pages/signin/signin.js"></script>
   </body>
 </html>

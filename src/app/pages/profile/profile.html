@@ -15,6 +15,14 @@
       src="https://kit.fontawesome.com/15517dfa2f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+      integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>if_Reads</title>
   </head>
   <body id="home" class="flex flex-col min-h-screen">
@@ -78,7 +86,7 @@
               name="email"
               id="email"
               type="email"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="e-mail"
               pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
@@ -93,7 +101,7 @@
               name="password"
               id="password"
               type="password"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="password"
               pattern="^(?=.*[A-Za-z])(?=.*\d).{8,}$"
             />
@@ -108,7 +116,7 @@
               name="birthday"
               id="birthday"
               type="text"
-              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center"
+              class="rounded-tl-xlg rounded-br-xlg h-8 placeholder:text-center w-[16rem] mr-2 text-center invalid:border-invalid invalid:text-invalid"
               placeholder="birthday"
               min="01-01-1900"
               max="31-12-2023"
@@ -138,8 +146,6 @@
       </aside>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="/src/assets/libraries/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
     <script src="/src/app/pages/profile/profile.js"></script>
   </body>
 </html>
