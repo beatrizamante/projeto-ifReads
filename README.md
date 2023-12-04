@@ -7,7 +7,7 @@
 
 ## Endereço de Deploy - GitHub Pages
 
-https://github.com/beatrizamante/projeto-ifReads
+https://beatrizamante.github.io/projeto-ifReads/
 
 ## Protótipo
 
