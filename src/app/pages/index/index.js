@@ -39,3 +39,5 @@ for (let i = 0; i < 3; i++) {
     $(".card-fade-in").last().fadeIn(2000);
   });
 }
+
+
