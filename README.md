@@ -13,6 +13,17 @@ https://beatrizamante.github.io/projeto-ifReads/
 
 https://www.figma.com/file/lKYFpYYjg18cWJ7dSrJ62D/projeto_ifReads?type=design&node-id=0%3A1&mode=design&t=YehGFWTRRUddoEav-1
 
+## Vídeos com explicação
+
+Visualização do site:
+https://www.loom.com/share/52591c963d3d4acb932e8acefa2af817?sid=1e6b2aa3-de50-4945-86a4-16e2fd601b1c
+
+Visualização do código:
+https://www.loom.com/share/5b5bed8cf7b549df90992ea4cb3a11f8?sid=5f90cc37-55cd-40b0-8373-6e1f350f74eb
+https://www.loom.com/share/999c1ca1a00d4a5cb8a309e56195771c?sid=3ee87aa7-d749-43c2-8ef1-5d8ea77faa14
+https://www.loom.com/share/a4a96536080644dca6734c86394a8ae4?sid=7f838511-c4fc-4c82-b6da-ef7bf873351b
+https://www.loom.com/share/24a81d6bee9b4a02849a4673e2cd672f?sid=e87ce386-e84b-40c7-8a7a-2274c76c3662
+
 ## Checklist
 
 - [x] Implementa um layout responsivo de uma página web utilizando um Framework CSS, como Bootstrap, Materialize ou Tailwind, que se adapta adequadamente a diferentes tamanhos de tela e dispositivos.
