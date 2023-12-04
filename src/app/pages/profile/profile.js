@@ -1,3 +1,7 @@
+document.getElementById("menu-button").onclick = function () {
+  location.href = "/src/app/pages/menu/menu.html";
+};
+
 let isValid = true;
 // window.onload = loadData();
 
