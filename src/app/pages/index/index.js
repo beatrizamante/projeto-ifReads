@@ -24,7 +24,7 @@ for (let i = 0; i < 3; i++) {
     const summary = books[i].summary;
 
     const blocoHTML = `
-      <div class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto h-[25vmax]">
+      <div class="card w-[94%] bg-teal-light bg-opacity-60 rounded-md shadow-xl text-textColor mx-auto h-[25vmax] hidden card-fade-in">
         <div class="card-body">
           <h3>${title}</h3>
           <p class="truncate">
@@ -36,9 +36,8 @@ for (let i = 0; i < 3; i++) {
     `;
 
     $("#authors-div").append(blocoHTML);
+    $(".card-fade-in").last().fadeIn(2000);
   });
 }
 
-$(document).ready(function () {
-  $("#authors-div").fadeIn(200);
-});
+
