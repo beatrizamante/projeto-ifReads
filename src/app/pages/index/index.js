@@ -38,3 +38,7 @@ for (let i = 0; i < 3; i++) {
     $("#authors-div").append(blocoHTML);
   });
 }
+
+$(document).ready(function () {
+  $("#authors-div").fadeIn(200);
+});
